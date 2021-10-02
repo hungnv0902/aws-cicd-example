@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  nuxt:
+    image: ${IMAGE_NAME}:${IMAGE_TAG}
+    container_name: web
+    restart: always
+    ports:
+      - "80:80"
